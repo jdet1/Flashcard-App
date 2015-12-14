@@ -1,0 +1,59 @@
+{
+	"cards": [
+	{
+		"term": "Service",
+		"definition": "A means of delivering value to customers where the customers receive outcomes without taking on the risks"
+	}, {
+		"term": "Service Management",
+		"definition": "A set of specialized organization capabilities for providing value to cusotmers in the form of services"
+	}, {
+		"term": "ITSM",
+		"definition": "IT Service management is defined as the implementation and management of quality IT Services that meet the needs of the business"
+	}, {
+		"term": "Governance",
+		"definition": "Defines the common policies, directions, and rules that both the business and IT use to conduct business"
+	}, {
+		"term": "3 Types of Service Providers",
+		"definition": " -Type 1: Internal Service Provider \n -Type 2: Shared Service Provider \n -Type 3: External Service Provider"
+	}, {
+		"term": "3 Types of Service",
+		"definition": " -Core Service: The main service the customer wants \n -Enabling Services: Underlying services that support the core service \n -Enhancing Services: Additional Services meant to entice customers and sweeten the deal"
+	}, {
+		"term": "Process Owner",
+		"definition": "Person that writes the process and is accountable for the overall success of the process"
+	}, {
+		"term": "Process Owner Responsibilities",
+		"definition": "(D.I.M.E) \n -Documenting the Process \n -Continually Improving the process \n -Measuring the process against various metrics \n -Educating staff on using the process; Ensuring the process is used correctly"
+	}, {
+		"term": "Process Manager",
+		"definition": "Manage the day-to-day activities of the process"
+	}, {
+		"term": "Process Practitioner",
+		"definition": "The people who actually do the process"
+	}, {
+		"term": "Function",
+		"definition": "A person, or group of people that work to accomplish a certain task"
+	}, {
+		"term": "Role",
+		"definition": "A set of responsibilities that are defined in a process and then assigned to a person or team"
+	}, {
+		"term": "Processes",
+		"definition": "Performed by one or more functions to reliably deliver outputs"
+	}, {
+		"term": "RACI Model",
+		"definition": " -Responsible: Actually perfomes the task (Every Line needs at least one R \n -Accountable: The person who is on the line for the item (can only be one A per line) \n -Consulted: Person who gets asked advice for the assigned item (optional) \n -Informed: person who is to be informed of the status (optional)"
+	} , {
+		"term": "Value = ",
+		"definition": "Value = Utility + Warraty"
+	} , {
+		"term": "Warranty",
+		"definition": " Fit for Use"
+	} , {
+		"term": "Utility",
+		"definition": "Fit for Purpose"
+	} , {
+		"term": "Processes",
+		"definition": "Performed by one or more functions to reliably deliver outputs"
+	}
+	]
+}
