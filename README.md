@@ -1,5 +1,5 @@
 # Flashcard-App
-Simple Flashcard application created in JavaFX.
+Simple Flashcard application created in Java.
 
 Loads new flashcards from .flashcard files written in JSON format.
 
