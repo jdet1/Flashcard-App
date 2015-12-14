@@ -10,12 +10,12 @@ public class Session {
 	private List<Flashcard> flashcards;
 	private int index = 0;
 	private int cardSide = 0; //0 = term, 1 = definition
+	private int defaultCardSide = 0;	
 	
 	public Session(){
 		flashcards = new ArrayList<Flashcard>();
 		title = "";
 	}
-	
 	public String getTitle() {
 		return title.replace(".flashcard", "");
 	}
@@ -39,6 +39,12 @@ public class Session {
 		} else { 
 			this.index = index;
 		}
+	}
+	public int getDefaultCardSide() {
+		return defaultCardSide;
+	}
+	public void setDefaultCardSide(int defaultCardSide) {
+		this.defaultCardSide = defaultCardSide;
 	}
 	public Flashcard getCurrentCard() {
 		if (flashcards.size() > 0) {
@@ -91,7 +97,7 @@ public class Session {
 	public void reset() {
 		this.flashcards = new ArrayList<Flashcard>();
 		this.index = 0;
-		this.cardSide = 0;
+		this.cardSide = defaultCardSide;
 		this.title = "";
 	}
 }

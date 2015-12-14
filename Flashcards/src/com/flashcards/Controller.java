@@ -55,6 +55,20 @@ public class Controller {
 	}
 	
 	@FXML
+	private void showDefinitionFirst(){
+		Session session = Main.getSession();
+		
+		if (session.getDefaultCardSide() == 0) {
+			session.setDefaultCardSide(1);
+			session.setCardSide(1);
+		} else {
+			session.setDefaultCardSide(0);
+			session.setCardSide(0);
+		}
+		update();
+	}
+	
+	@FXML
 	private void flipCard(){
 		Session session = Main.getSession();
 		if (session.cardsLoaded()) {
@@ -71,7 +85,7 @@ public class Controller {
 	private void nextCard(){
 		Session session = Main.getSession();
 		if (session.cardsLoaded()) {
-			session.setCardSide(0);
+			session.setCardSide(session.getDefaultCardSide());
 			session.setIndex(session.getIndex()+1);
 			update();
 		}
@@ -80,7 +94,7 @@ public class Controller {
 	private void prevCard(){
 		Session session = Main.getSession();
 		if (session.cardsLoaded()) {
-			session.setCardSide(0);
+			session.setCardSide(session.getDefaultCardSide());
 			session.setIndex(session.getIndex()-1);
 			update();
 		}
@@ -91,7 +105,7 @@ public class Controller {
 		if (session.cardsLoaded()) {
 			session.shuffle();
 			session.setIndex(0);
-			session.setCardSide(0);
+			session.setCardSide(session.getDefaultCardSide());
 			update();
 		}
 	}
