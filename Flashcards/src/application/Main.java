@@ -23,6 +23,7 @@ public class Main extends Application {
 		session = new Session();
 		try {
 			primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
+			primaryStage.setResizable(false);
 			VBox page = FXMLLoader.load(Main.class.getResource("Main.fxml"));
 			root = page;
             Scene scene = new Scene(page);
