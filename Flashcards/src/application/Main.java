@@ -1,6 +1,6 @@
 package application;
 	
-import com.flashcards.Session;
+import com.flashcards.model.Session;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -29,7 +29,7 @@ public class Main extends Application {
             Scene scene = new Scene(page);
             primaryStage.setScene(scene);
             primaryStage.setTitle("Flashcards");
-            primaryStage.show();
+            primaryStage.show();           
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

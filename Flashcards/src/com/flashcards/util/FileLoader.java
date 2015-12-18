@@ -9,8 +9,8 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.flashcards.Flashcard;
-import com.flashcards.Session;
+import com.flashcards.model.Flashcard;
+import com.flashcards.model.Session;
 
 
 public class FileLoader {
@@ -45,7 +45,7 @@ public class FileLoader {
 			session.setFlashcards(cards);
 			return true;
 			
-		} catch (Exception e) {
+		} catch (Exception e) { //Should handle exceptions properly but...
 			throw e;
 		}
 		

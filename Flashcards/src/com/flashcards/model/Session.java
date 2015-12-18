@@ -1,4 +1,4 @@
-package com.flashcards;
+package com.flashcards.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ public class Session {
 	private List<Flashcard> flashcards;
 	private int index = 0;
 	private int cardSide = 0; //0 = term, 1 = definition
-	private int defaultCardSide = 0;	
+	private int defaultCardSide = 0;
 	
 	public Session(){
 		flashcards = new ArrayList<Flashcard>();

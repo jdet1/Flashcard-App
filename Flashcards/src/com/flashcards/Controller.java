@@ -2,15 +2,18 @@ package com.flashcards;
 
 import java.io.File;
 
+import com.flashcards.model.Session;
 import com.flashcards.util.FileLoader;
 
 import application.Main;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.FileChooser;
 
 public class Controller {
@@ -22,6 +25,7 @@ public class Controller {
 	@FXML
 	Label cardCountLabel;
 	
+	
 	public void update() {
 		Session session = Main.getSession();
 		cardText.setText(session.getCardText());
@@ -29,6 +33,7 @@ public class Controller {
 		cardCountLabel.setText(session.getCardCountLabelText());
 		cardCountLabel.setAlignment(Pos.CENTER);
 	}
+	
 	
 	@FXML
 	private void loadFile() {
@@ -51,6 +56,7 @@ public class Controller {
 				openLoadError();
 				update();
 			}
+			
 		}
 	}
 	
