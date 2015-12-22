@@ -83,7 +83,7 @@ public class Session {
 			for (int i=0; i< size; i++) {
 				Random rand = new Random();
 				int x = rand.nextInt(size);
-				while (oldVals.contains(x)) {
+				while (oldVals.contains(x)) { //really inefficient
 					x = rand.nextInt(size);
 				}
 				oldVals.add(x);
