@@ -12,7 +12,7 @@ import javafx.scene.layout.VBox;
 
 public class Main extends Application {
 	
-	
+	private static String defaultDirectory;
 	private static Session session;
 	private static Stage stage;
 	private static VBox root;
@@ -21,6 +21,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		stage = primaryStage;
 		session = new Session();
+		defaultDirectory = getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
 		try {
 			primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
 			primaryStage.setResizable(false);
@@ -47,5 +48,8 @@ public class Main extends Application {
 	}
 	public static VBox getRoot(){
 		return root;
+	}
+	public static String getDefaultDirectory() {
+		return defaultDirectory;
 	}
 }

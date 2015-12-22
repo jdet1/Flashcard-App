@@ -16,6 +16,7 @@ public class Editor {
 	public static void openEditor() {
 		
 		try {
+			
 			session = new EditorSession();
 			
 			VBox root1 = FXMLLoader.load(Main.class.getResource("Editor.fxml"));

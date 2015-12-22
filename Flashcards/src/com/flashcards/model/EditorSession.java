@@ -3,8 +3,6 @@ package com.flashcards.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import javafx.scene.control.TabPane;
-
 public class EditorSession {
 
 	private List<Flashcard> flashcards;

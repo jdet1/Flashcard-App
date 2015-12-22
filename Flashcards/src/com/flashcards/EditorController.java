@@ -65,7 +65,7 @@ public class EditorController {
 		FileChooser fileChooser = new FileChooser();
 		fileChooser.setTitle("Save Flashcard File");
 
-		fileChooser.setInitialDirectory(new File(System.getProperty("user.home")+"/Desktop"));
+		fileChooser.setInitialDirectory(new File(Main.getDefaultDirectory()));
 
 		FileChooser.ExtensionFilter extFilter = 
 				new FileChooser.ExtensionFilter("FlashCard files (*.flashcard)", "*.flashcard");
@@ -85,7 +85,7 @@ public class EditorController {
 		FileChooser fileChooser = new FileChooser();
 		fileChooser.setTitle("Open Flashcard File");
 
-		fileChooser.setInitialDirectory(new File(System.getProperty("user.home")+"/Desktop"));
+		fileChooser.setInitialDirectory(new File(Main.getDefaultDirectory()));
 
 		FileChooser.ExtensionFilter extFilter = 
 				new FileChooser.ExtensionFilter("FlashCard files (*.flashcard)", "*.flashcard");

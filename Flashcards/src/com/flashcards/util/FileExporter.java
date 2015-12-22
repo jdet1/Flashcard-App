@@ -26,16 +26,15 @@ public class FileExporter {
 		List<Flashcard> cards = new ArrayList<Flashcard>();
 		
 		for (Tab tab : tabs) {
-			
-			if (tab.getId() == null) { //only addTab has ID
-				Flashcard card = new Flashcard();
-				HBox content = (HBox) tab.getContent();
-				HTMLEditor term = (HTMLEditor)content.getChildren().get(0);
-				HTMLEditor definition = (HTMLEditor)content.getChildren().get(1);
-				card.setTerm(term.getHtmlText());
-				card.setDefinition(definition.getHtmlText());
-				cards.add(card);
-			}
+
+			Flashcard card = new Flashcard();
+			HBox content = (HBox) tab.getContent();
+			HTMLEditor term = (HTMLEditor)content.getChildren().get(0);
+			HTMLEditor definition = (HTMLEditor)content.getChildren().get(1);
+			card.setTerm(term.getHtmlText());
+			card.setDefinition(definition.getHtmlText());
+			cards.add(card);
+
 		}
 		
 		

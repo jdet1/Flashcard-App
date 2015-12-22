@@ -5,7 +5,6 @@ public class Flashcard {
 	private String term;
 	private String definition;
 	
-	
 	public String getTerm() {
 		return term;
 	}
