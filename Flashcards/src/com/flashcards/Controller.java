@@ -136,7 +136,7 @@ public class Controller {
 		alert.setTitle("About");
 		
 		alert.setHeaderText("About Flashcards");
-		alert.setContentText("Created by James DeTizio");
+		alert.setContentText("An actual Help menu will be here eventually... \n\n - Created by James DeTizio");
 		
 		alert.showAndWait();
 	}

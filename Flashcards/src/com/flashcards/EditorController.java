@@ -2,6 +2,7 @@ package com.flashcards;
 
 import java.io.File;
 import java.util.List;
+import java.util.Optional;
 
 import com.flashcards.model.Flashcard;
 import com.flashcards.util.FileExporter;
@@ -15,12 +16,13 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.ContextMenu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.web.HTMLEditor;
 import javafx.stage.FileChooser;
@@ -37,8 +39,24 @@ public class EditorController {
 
 	@FXML
 	private void newFile() {
-		Editor.getSession().reset();
-		update();
+		
+		if (Editor.getSession().getCardCount() > 0) {
+			Alert alert = new Alert(AlertType.CONFIRMATION);
+	
+			alert.setTitle("Are you sure?");
+			alert.setContentText("Are you sure you want to start a new file?");
+			Optional<ButtonType> result = alert.showAndWait();
+			if (result.get() == ButtonType.OK){
+				Editor.getSession().reset();
+				update();
+			}
+			
+		} else {
+			Editor.getSession().reset();
+			update();
+		}
+		
+		
 	}
 
 	@FXML
@@ -60,7 +78,7 @@ public class EditorController {
 			FileExporter.saveFile(content, file);
 		}
 	}
-
+	
 	@FXML
 	private void open(){
 
@@ -95,6 +113,19 @@ public class EditorController {
 		Editor.getStage().close();
 	}
 
+	@FXML
+	private void openAbout() {
+		
+		Alert alert = new Alert(AlertType.INFORMATION);
+		
+		alert.setTitle("About");
+		
+		alert.setHeaderText("About Flashcards");
+		alert.setContentText("An actual Help menu will be here eventually... \n\n - Created by James DeTizio");
+		
+		alert.showAndWait();
+	}
+	
 	private void update() {
 
 		tabPane.getTabs().clear();
@@ -125,7 +156,7 @@ public class EditorController {
 		addTabBtn.setGraphic(new ImageView(addImg));
 		addTabBtn.setOnAction(new EventHandler<ActionEvent>(){
 			@Override public void handle(ActionEvent e){
-				addTab();
+				addTab("", "");
 			}
 		});
 

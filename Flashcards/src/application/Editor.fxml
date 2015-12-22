@@ -15,14 +15,13 @@
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#newFile" text="New" />
                   <MenuItem mnemonicParsing="false" onAction="#open" text="Open..." />
-                  <MenuItem mnemonicParsing="false" text="Save" />
                   <MenuItem mnemonicParsing="false" onAction="#saveAs" text="Save As..." />
                   <MenuItem mnemonicParsing="false" onAction="#quit" text="Quit" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Help">
                <items>
-                  <MenuItem mnemonicParsing="false" text="About Flashcards" />
+                  <MenuItem mnemonicParsing="false" onAction="#openAbout" text="About Flashcards" />
                </items>
             </Menu>
          </menus>
