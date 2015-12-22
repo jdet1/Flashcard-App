@@ -223,7 +223,26 @@ public class EditorController {
 			}
 		});
 		
+		MenuItem copyBtn = new MenuItem(" copy");
+		Image copyImg = new Image(Main.class.getResourceAsStream("icons/copy.png"), 20, 20, true, true);
+		copyBtn.setGraphic(new ImageView(copyImg));
+		copyBtn.setOnAction(new EventHandler<ActionEvent>(){
+			@Override public void handle(ActionEvent e){
+				
+				for (Tab t : tabPane.getTabs()) {
+					if (t.equals(tab)) {
+						HBox content = (HBox) t.getContent();
+						HTMLEditor term = (HTMLEditor)content.getChildren().get(0);
+						HTMLEditor definition = (HTMLEditor)content.getChildren().get(1);
+						addTab(term.getHtmlText(), definition.getHtmlText());
+						break;
+					}
+				}
+			}
+		});
+		
 		contextMenu.getItems().add(addTabBtn);
+		contextMenu.getItems().add(copyBtn);
 		contextMenu.getItems().add(moveLftBtn);
 		contextMenu.getItems().add(moveRgtBtn);
 		contextMenu.getItems().add(deleteTabBtn);
