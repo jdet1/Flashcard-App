@@ -21,7 +21,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		stage = primaryStage;
 		session = new Session();
-		defaultDirectory = getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
+		defaultDirectory = System.getProperty("user.home")+"/Desktop";
+		
 		try {
 			primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
 			primaryStage.setResizable(false);
@@ -51,5 +52,8 @@ public class Main extends Application {
 	}
 	public static String getDefaultDirectory() {
 		return defaultDirectory;
+	}
+	public static void setDefaultDirectory(String newDefaultDirectory) {
+		defaultDirectory = newDefaultDirectory;
 	}
 }

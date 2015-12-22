@@ -73,6 +73,11 @@ public class EditorController {
 		File file = fileChooser.showSaveDialog(Editor.getStage());
 
 		if (file != null) {
+			
+			String newDefaultDirectory = 
+					file.getAbsolutePath().substring(0,file.getAbsolutePath().lastIndexOf(File.separator));
+			Main.setDefaultDirectory(newDefaultDirectory);
+			
 			List<Flashcard> cards = FileExporter.processFlashcardData(tabPane);
 			String content = FileExporter.convertToJSON(cards);
 			FileExporter.saveFile(content, file);
@@ -94,6 +99,11 @@ public class EditorController {
 		File file = fileChooser.showOpenDialog(Editor.getStage());
 
 		if (file != null) {
+			
+			String newDefaultDirectory = 
+					file.getAbsolutePath().substring(0,file.getAbsolutePath().lastIndexOf(File.separator));
+			Main.setDefaultDirectory(newDefaultDirectory);
+			
 			Editor.getSession().reset();
 			try {
 				FileLoader.loadFile(Editor.getSession(), file);

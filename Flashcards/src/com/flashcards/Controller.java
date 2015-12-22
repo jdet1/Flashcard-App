@@ -38,7 +38,7 @@ public class Controller {
 	private void loadFile() {
 		FileChooser fileChooser = new FileChooser();
 		fileChooser.setTitle("Open Flashcard File");
-		fileChooser.setInitialDirectory(new File(Main.getDefaultDirectory()));//System.getProperty("user.home")+"/Desktop") - ORI DIR
+		fileChooser.setInitialDirectory(new File(Main.getDefaultDirectory()));
 		
 		FileChooser.ExtensionFilter extFilter = 
 				new FileChooser.ExtensionFilter("FlashCard files (*.flashcard)", "*.flashcard");
@@ -46,6 +46,9 @@ public class Controller {
 		File file = fileChooser.showOpenDialog(Main.getStage());
 		
 		if (file != null) {
+			String newDefaultDirectory = 
+					file.getAbsolutePath().substring(0,file.getAbsolutePath().lastIndexOf(File.separator));
+			Main.setDefaultDirectory(newDefaultDirectory);
 			Main.getSession().reset();
 			try {
 				FileLoader.loadFile(Main.getSession(), file);
