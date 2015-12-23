@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <anttasks:AntTask xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:anttasks="http://org.eclipse.fx.ide.jdt/1.0" buildDirectory="${project}/build">
-  <deploy packagingFormat="exe">
-    <application name="Test" mainclass="application.Main" version="1.1.0" toolkit="fx"/>
+  <deploy embedjnlp="true" packagingFormat="exe">
+    <application name="Test" mainclass="application.Main" version="2.0.0" toolkit="fx"/>
     <info title="Flashcards" vendor="DeTizio"/>
   </deploy>
   <signjar/>

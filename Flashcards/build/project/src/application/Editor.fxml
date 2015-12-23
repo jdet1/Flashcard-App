@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flashcards.EditorController">
+   <children>
+      <MenuBar>
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#newFile" text="New" />
+                  <MenuItem mnemonicParsing="false" onAction="#open" text="Open..." />
+                  <MenuItem mnemonicParsing="false" onAction="#saveAs" text="Save As..." />
+                  <MenuItem mnemonicParsing="false" onAction="#quit" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#openAbout" text="About Flashcards" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="490.0" prefWidth="1316.0">
+         <children>
+            <TabPane fx:id="tabPane" prefHeight="490.0" prefWidth="1316.0" tabClosingPolicy="ALL_TABS" />
+         </children></AnchorPane>
+   </children>
+</VBox>

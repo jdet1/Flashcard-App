@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flashcards.Controller">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#loadFile" text="Load..." />
+                  <MenuItem mnemonicParsing="false" onAction="#openEditor" text="Open Editor" />
+            <MenuItem mnemonicParsing="false" onAction="#quit" text="Quit" />
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="Options">
+               <items>
+                  <CheckMenuItem mnemonicParsing="false" onAction="#showDefinitionFirst" text="Show Definition First" />
+               </items>
+            </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#openAbout" text="About Flashcards" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="385.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox layoutX="124.0" layoutY="275.0" prefHeight="92.0" prefWidth="392.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#prevCard" prefHeight="92.0" prefWidth="129.0" text="&lt;-" />
+                  <Button mnemonicParsing="false" onAction="#flipCard" prefHeight="92.0" prefWidth="129.0" text="Flip" />
+                  <Button mnemonicParsing="false" onAction="#nextCard" prefHeight="92.0" prefWidth="129.0" text="-&gt;" />
+               </children>
+            </HBox>
+            <Pane id="cardBox" layoutX="124.0" layoutY="35.0" prefHeight="200.0" prefWidth="392.0" style="-fx-background-color: #f1f4f4;">
+               <children>
+                  <WebView fx:id="cardText" prefHeight="200.0" prefWidth="392.0" />
+               </children></Pane>
+            <Label id="titleLabel" fx:id="titleLabel" layoutX="14.0" layoutY="4.0" prefHeight="21.0" prefWidth="590.0" text="Load a flashcard file to get started..." />
+            <Label id="cardCountLabel" fx:id="cardCountLabel" layoutX="253.0" layoutY="245.0" prefHeight="21.0" prefWidth="129.0" />
+            <Button layoutX="539.0" layoutY="120.0" mnemonicParsing="false" onAction="#doShuffle" text="Shuffle" />
+         </children></AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</VBox>
