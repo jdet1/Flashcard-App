@@ -5,6 +5,7 @@ import com.flashcards.model.Session;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
@@ -27,10 +28,12 @@ public class Main extends Application {
 			primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("icon.png")));
 			primaryStage.setResizable(false);
 			VBox page = FXMLLoader.load(Main.class.getResource("Main.fxml"));
+			page.setStyle("-fx-background: #EEEEEE;");
 			root = page;
             Scene scene = new Scene(page);
             primaryStage.setScene(scene);
             primaryStage.setTitle("Flashcards");
+            
             primaryStage.show();           
 		} catch(Exception e) {
 			e.printStackTrace();
