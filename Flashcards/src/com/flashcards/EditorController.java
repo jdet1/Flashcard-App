@@ -131,7 +131,7 @@ public class EditorController {
 		alert.setTitle("About");
 		
 		alert.setHeaderText("About Flashcards");
-		alert.setContentText("An actual Help menu will be here eventually... \n\n - Created by James DeTizio");
+		alert.setContentText("\n - Created by James DeTizio");
 		
 		alert.showAndWait();
 	}

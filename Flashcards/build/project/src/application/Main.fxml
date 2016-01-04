@@ -36,9 +36,9 @@
          <children>
             <HBox layoutX="124.0" layoutY="275.0" prefHeight="92.0" prefWidth="392.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#prevCard" prefHeight="92.0" prefWidth="129.0" text="&lt;-" />
-                  <Button mnemonicParsing="false" onAction="#flipCard" prefHeight="92.0" prefWidth="129.0" text="Flip" />
-                  <Button mnemonicParsing="false" onAction="#nextCard" prefHeight="92.0" prefWidth="129.0" text="-&gt;" />
+                  <Button fx:id="lftBtn" mnemonicParsing="false" onAction="#prevCard" prefHeight="92.0" prefWidth="129.0" />
+                  <Button fx:id="flipBtn" mnemonicParsing="false" onAction="#flipCard" prefHeight="92.0" prefWidth="129.0" />
+                  <Button fx:id="rgtBtn" mnemonicParsing="false" onAction="#nextCard" prefHeight="92.0" prefWidth="129.0" />
                </children>
             </HBox>
             <Pane id="cardBox" layoutX="124.0" layoutY="35.0" prefHeight="200.0" prefWidth="392.0" style="-fx-background-color: #f1f4f4;">
@@ -47,7 +47,7 @@
                </children></Pane>
             <Label id="titleLabel" fx:id="titleLabel" layoutX="14.0" layoutY="4.0" prefHeight="21.0" prefWidth="590.0" text="Load a flashcard file to get started..." />
             <Label id="cardCountLabel" fx:id="cardCountLabel" layoutX="253.0" layoutY="245.0" prefHeight="21.0" prefWidth="129.0" />
-            <Button layoutX="539.0" layoutY="120.0" mnemonicParsing="false" onAction="#doShuffle" text="Shuffle" />
+            <Button fx:id="shuffleBtn" layoutX="526.0" layoutY="107.0" mnemonicParsing="false" onAction="#doShuffle" prefHeight="62.0" prefWidth="85.0" />
          </children></AnchorPane>
   </children>
   <stylesheets>

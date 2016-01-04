@@ -1,10 +1,76 @@
 .menu-bar {
-    -fx-background-color: #aeb5ba, linear-gradient(to bottom, #ecf4fa 0%, #ced4d9 100%);
+    -fx-background-color: #FFFFFF;
     -fx-background-insets: 0, 0 0 1 0;
 }
 
 .menu-bar .menu .label {
     -fx-text-fill: #2d3e4c;
+}
+
+#lftBtn {
+	-fx-background-image: url("icons/lft-btn.png");
+	-fx-background-position: center  ;
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 50%;
+	-fx-background-radius: 0.0;
+	-fx-background-color: #34495e;
+	-fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+#lftBtn:hover {
+	-fx-background-color: #074354;
+}
+#lftBtn:pressed {
+	-fx-background-color: #34495e;
+}
+#flipBtn {
+	-fx-background-image: url("icons/flip-btn.png");
+	-fx-background-position: center  ;
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 50%;
+	-fx-background-radius: 0.0;
+	-fx-background-color: #34495e;
+	-fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+#flipBtn:hover {
+	-fx-background-color: #074354;
+}
+#flipBtn:pressed {
+	-fx-background-color: #34495e;
+}
+#rgtBtn {
+	-fx-background-image: url("icons/rgt-btn.png");
+	-fx-background-position: center  ;
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 50%;
+	-fx-background-radius: 0.0;
+	-fx-background-color: #34495e;
+	-fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+#rgtBtn:hover {
+	-fx-background-color: #074354;
+}
+#rgtBtn:pressed {
+	-fx-background-color: #34495e;
+}
+#shuffleBtn {
+	-fx-background-image: url("icons/shuffle-btn.png");
+	-fx-background-position: center  ;
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 50%;
+	-fx-background-radius: 0.0;
+	-fx-background-color: #34495e;
+}
+#shuffleBtn:hover {
+	-fx-background-color: #074354;
+}
+#shuffleBtn:pressed {
+	-fx-background-color: #34495e;
 }
 
 

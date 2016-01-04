@@ -21,6 +21,7 @@ public class Editor {
 			
 			VBox root1 = FXMLLoader.load(Main.class.getResource("Editor.fxml"));
 	        stage = new Stage();
+	        stage.setResizable(false);
 	        stage.setTitle("Editor");
 	        stage.setScene(new Scene(root1));  
 	        stage.show();

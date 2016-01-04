@@ -11,7 +11,9 @@ import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tooltip;
 import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
 
@@ -23,7 +25,7 @@ public class Controller {
 	WebView cardText;
 	@FXML
 	Label cardCountLabel;
-	
+
 	
 	public void update() {
 		Session session = Main.getSession();
@@ -31,6 +33,7 @@ public class Controller {
 		
 		cardCountLabel.setText(session.getCardCountLabelText());
 		cardCountLabel.setAlignment(Pos.CENTER);
+
 	}
 	
 	
@@ -139,7 +142,7 @@ public class Controller {
 		alert.setTitle("About");
 		
 		alert.setHeaderText("About Flashcards");
-		alert.setContentText("An actual Help menu will be here eventually... \n\n - Created by James DeTizio");
+		alert.setContentText("\n - Created by James DeTizio");
 		
 		alert.showAndWait();
 	}

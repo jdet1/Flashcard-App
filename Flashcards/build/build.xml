@@ -109,9 +109,9 @@
 			<fx:resources refid="appRes"/>
 	
 			<manifest>
-				<attribute name="Implementation-Vendor" value="DeTizio"/>
+				<attribute name="Implementation-Vendor" value="Flashcards"/>
 				<attribute name="Implementation-Title" value="Flashcards"/>
-				<attribute name="Implementation-Version" value="2.0.0"/>
+				<attribute name="Implementation-Version" value="2.1.0"/>
 				<attribute name="JavaFX-Feature-Proxy" value="None"/>
 			</manifest>
 		</fx:jar>
@@ -122,7 +122,6 @@
 		<fx:deploy
 			embedJNLP="true"
 			extension="false"
-			verbose="true"
 			includeDT="false"
 			offlineAllowed="true"
 			outdir="${basedir}/deploy"
@@ -130,7 +129,7 @@
 			updatemode="background" >
 	
 			<fx:platform basedir="${java.home}"/>
-			<fx:info title="Flashcards" vendor="DeTizio"/>
+			<fx:info title="Flashcards" vendor="Flashcards"/>
 	
 			<fx:application refId="fxApplication"/>
 			<fx:resources refid="appRes"/>

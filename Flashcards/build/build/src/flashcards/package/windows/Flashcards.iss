@@ -3,9 +3,9 @@
 [Setup]
 AppId={{fxApplication}}
 AppName=Flashcards
-AppVersion=2.0
-AppVerName=Flashcards 2.0
-AppPublisher=DeTizio
+AppVersion=2.1
+AppVerName=Flashcards-installer 2.1
+AppPublisher=Flashcards
 AppComments=Flashcards
 AppCopyright=Copyright (C) 2015
 ;AppPublisherURL=http://java.com/
@@ -18,7 +18,7 @@ DisableProgramGroupPage=Yes
 DisableReadyPage=No
 DisableFinishedPage=No
 DisableWelcomePage=Yes
-DefaultGroupName=DeTizio
+DefaultGroupName=Flashcards
 ;Optional License
 LicenseFile=
 ;WinXP or above

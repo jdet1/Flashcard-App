@@ -7,4 +7,51 @@
     -fx-text-fill: #2d3e4c;
 }
 
+#lftBtn {
+	-fx-background-image: url("icons/lft-btn.png");
+	-fx-background-position: center  ;
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 50%;
+	-fx-background-radius: 0.0;
+	-fx-background-color: #95a5a6;
+}
+#lftBtn:hover {
+	-fx-background-color: #ecf0f1;
+}
+
+#flipBtn {
+	-fx-background-image: url("icons/flip-btn.png");
+	-fx-background-position: center  ;
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 50%;
+	-fx-background-radius: 0.0;
+	-fx-background-color: #95a5a6;
+}
+#flipBtn:hover {
+	-fx-background-color: #ecf0f1;
+}
+
+#rgtBtn {
+	-fx-background-image: url("icons/rgt-btn.png");
+	-fx-background-position: center  ;
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 50%;
+	-fx-background-radius: 0.0;
+	-fx-background-color: #95a5a6;
+}
+#rgtBtn:hover {
+	-fx-background-color: #ecf0f1;
+}
+#shuffleBtn {
+	-fx-background-image: url("icons/shuffle-btn.png");
+	-fx-background-position: center  ;
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 50%;
+	-fx-background-radius: 0.0;
+	-fx-background-color: #95a5a6;
+}
+#shuffleBtn:hover {
+	-fx-background-color: #ecf0f1;
+}
+
 
