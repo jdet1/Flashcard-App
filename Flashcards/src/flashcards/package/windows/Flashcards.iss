@@ -3,8 +3,8 @@
 [Setup]
 AppId={{fxApplication}}
 AppName=Flashcards
-AppVersion=2.1
-AppVerName=Flashcards-installer 2.1
+AppVersion=2.2
+AppVerName=Flashcards 2.2
 AppPublisher=Flashcards
 AppComments=Flashcards
 AppCopyright=Copyright (C) 2015
@@ -23,7 +23,7 @@ DefaultGroupName=Flashcards
 LicenseFile=
 ;WinXP or above
 MinVersion=0,5.1 
-OutputBaseFilename=Flashcards-2.0
+OutputBaseFilename=Flashcards-installer 2.2
 Compression=lzma
 SolidCompression=yes
 PrivilegesRequired=lowest

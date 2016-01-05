@@ -1,14 +1,15 @@
 package application;
 	
+import java.io.File;
+
 import com.flashcards.model.Session;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 
 public class Main extends Application {
@@ -54,7 +55,14 @@ public class Main extends Application {
 		return root;
 	}
 	public static String getDefaultDirectory() {
-		return defaultDirectory;
+		
+		File f = new File(defaultDirectory);
+		if (f.exists()) {
+			return defaultDirectory;
+		} else {
+			defaultDirectory = System.getProperty("user.home")+"/Desktop";
+			return defaultDirectory;
+		}
 	}
 	public static void setDefaultDirectory(String newDefaultDirectory) {
 		defaultDirectory = newDefaultDirectory;

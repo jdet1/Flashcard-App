@@ -41,6 +41,7 @@ public class Controller {
 	private void loadFile() {
 		FileChooser fileChooser = new FileChooser();
 		fileChooser.setTitle("Open Flashcard File");
+		
 		fileChooser.setInitialDirectory(new File(Main.getDefaultDirectory()));
 		
 		FileChooser.ExtensionFilter extFilter = 
