@@ -13,16 +13,17 @@
 	-fx-background-repeat: no-repeat ;
 	-fx-background-size: 50%;
 	-fx-background-radius: 0.0;
-	-fx-background-color: #34495e;
+	-fx-background-color: #6993bd;
 	-fx-padding: 5px;
     -fx-border-insets: 5px;
     -fx-background-insets: 5px;
+    -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 0, 0);
 }
 #lftBtn:hover {
-	-fx-background-color: #074354;
+	-fx-background-color: #7cabdb;
 }
 #lftBtn:pressed {
-	-fx-background-color: #34495e;
+	-fx-background-color: #6993bd;
 }
 #flipBtn {
 	-fx-background-image: url("icons/flip-btn.png");
@@ -30,16 +31,17 @@
 	-fx-background-repeat: no-repeat ;
 	-fx-background-size: 50%;
 	-fx-background-radius: 0.0;
-	-fx-background-color: #34495e;
+	-fx-background-color: #6993bd;
 	-fx-padding: 5px;
     -fx-border-insets: 5px;
     -fx-background-insets: 5px;
+    -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 0, 0);
 }
 #flipBtn:hover {
-	-fx-background-color: #074354;
+	-fx-background-color: #7cabdb;
 }
 #flipBtn:pressed {
-	-fx-background-color: #34495e;
+	-fx-background-color: #6993bd;
 }
 #rgtBtn {
 	-fx-background-image: url("icons/rgt-btn.png");
@@ -47,16 +49,17 @@
 	-fx-background-repeat: no-repeat ;
 	-fx-background-size: 50%;
 	-fx-background-radius: 0.0;
-	-fx-background-color: #34495e;
+	-fx-background-color: #6993bd;
 	-fx-padding: 5px;
     -fx-border-insets: 5px;
     -fx-background-insets: 5px;
+    -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 0, 0);
 }
 #rgtBtn:hover {
-	-fx-background-color: #074354;
+	-fx-background-color: #7cabdb;
 }
 #rgtBtn:pressed {
-	-fx-background-color: #34495e;
+	-fx-background-color: #6993bd;
 }
 #shuffleBtn {
 	-fx-background-image: url("icons/shuffle-btn.png");
@@ -64,13 +67,17 @@
 	-fx-background-repeat: no-repeat ;
 	-fx-background-size: 50%;
 	-fx-background-radius: 0.0;
-	-fx-background-color: #34495e;
+	-fx-background-color: #6993bd;
+	-fx-effect: dropshadow(three-pass-box, grey, 10, 0, 0, 0);
 }
 #shuffleBtn:hover {
-	-fx-background-color: #074354;
+	-fx-background-color: #7cabdb;
 }
 #shuffleBtn:pressed {
-	-fx-background-color: #34495e;
+	-fx-background-color: #6993bd;
+}
+#cardText {
+	-fx-effect: dropshadow(three-pass-box, black, 15, 0, 0, 0);
 }
 
 
