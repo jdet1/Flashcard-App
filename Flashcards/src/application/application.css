@@ -1,6 +1,7 @@
 .menu-bar {
     -fx-background-color: #FFFFFF;
     -fx-background-insets: 0, 0 0 1 0;
+    -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 0, 0);
 }
 
 .menu-bar .menu .label {
